@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <link rel="stylesheet" href="css/config.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="cargar_productos/productos.css">
+    <link rel="stylesheet" href="cargar_categoria/categorias.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://www.ecoprana.com.pe/wp-content/uploads/2023/09/mobilepants_sinfondo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+        <div class="categories" id="categories">
+            <!-- Categories will be loaded here dynamically -->
+        </div>
+        <div class="cart">
+            <button id="cartButton">
+                <img src="https://img.icons8.com/?size=100&id=43327&format=png&color=000000" alt="Cart Icon" class="cart-icon">
+                (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+    
+    <main id="root">
+        <div id="div_product_list"></div>
+        <div id="cartContainer" class="cart-container">
+            <h2>Lista de Compras</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Tienda Jimena by Rocky</p>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+    <script src="cargar_productos/cargar_productos.js"></script>
+    <script src="cargar_categoria/cargar_categorias.js"></script>
+</body>
+</html>
